@@ -3,7 +3,7 @@
         <button type="button"
                 id="account-button"
                 class="sm:py-3 flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-            <span class="flex gap-2 items-center text-white">
+            <span id="account_full_name" class=" edit_profile_header flex gap-2 items-center text-white">
                 {% include 'navbar/user.svg' %}
                 {% if request.user.first_name and request.user.last_name %}
                     {{ request.user.full_name }}

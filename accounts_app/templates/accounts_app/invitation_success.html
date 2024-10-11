@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto">
+    <h1 class="mt-10 text-2xl font-bold">Invitation Accepted!</h1>
+    <p class="my-5">Congratulations! Your account has been created successfully. You can now log in and start using our platform. Your password is pass_1234. This is just for testing hehe.</p>
+    <a href="{% url 'sign_in' %}" class="mt-5 py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-500">Login</a>
+</div>
+{% endblock %}
