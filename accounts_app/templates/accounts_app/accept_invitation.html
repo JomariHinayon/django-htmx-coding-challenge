@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto">
+    <h1 class="mt-10 text-2xl font-bold">Accept Invitation</h1>
+    <p class="mt-5">You have been invited by {{ invitation.invited_by.get_full_name }} to join our platform.</p>
+    
+    <form method="post" class="mt-5">
+        {% csrf_token %}
+        <!-- Add any additional fields you need for the user account creation -->
+        <button type="submit" class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-500">
+            Accept Invitation
+        </button>
+    </form>
+</div>
+{% endblock %}
